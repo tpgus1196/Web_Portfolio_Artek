@@ -1,2 +1,2 @@
-# Web_Portfolio_Artek
-아르텍 웹페이지 리디자인(반응형)
+# [Portfolio] Artek Web Redesign Project
+## <a href="https://annasui.com/?logged_in_customer_id=&lang=ko"> Original web page </a> of Artek Brand
