@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        html,body{font-size: 12px;}
+        h1,h2,h3,h4,h5,h6{font-size: 100%;}
+        ol,ul{list-style: none;}
+        a{text-decoration: none; color:inherit;}
+        button{background: transparent; border: none;}
+        
+        #btn{
+            margin: 50px;
+            width: 50px;
+        }
+        #btn span{
+            display: block;
+            width: 50px;
+            height: 10px;
+            background: #000;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        #btn:hover .bar1{
+            transform: rotate(90deg)
+                translateX(20px);
+        }
+        #btn:hover .bar2{
+            opacity: 0;
+        }
+        #btn:hover .bar3{
+            transform: translateY(-20px);
+        }
+    
+        #side{
+            width: 300px;
+            background: #000;
+            color: #fff;
+            position: fixed;
+            
+/*            ┌이렇게 하면 위-아래 화면크기에 맞춰서 붙음*/
+            top: 0;
+            bottom: 0;
+            
+/*            ┌옆으로 밀어내는 효과주기 위해 사전 작업*/
+            left: -300px;
+        }
+        
+        #side button{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            transition: 0.3s;
+        }
+        
+        #side button:hover{
+            transform: rotate(45deg);
+        }
+        #side ul{
+            margin-top: 20rem;
+        }
+        #side li a{
+            display: block;
+            font-size: 1.7rem;
+            line-height: 60px;
+            padding-left: 3rem;
+        }
+        #side li a:hover{
+            background: #111;
+        }
+    </style>
+</head>
+<body>
+<!--   #btn>span.bar$*3-->
+   <div id="btn">
+       <span class="bar1"></span>
+       <span class="bar2"></span>
+       <span class="bar3"></span>
+   </div>
+          
+<!--    #side>button+ul-->
+    <div id="side">
+        <button><img src="x_img.png" alt=""></button>
+        <ul>
+<!--            li>a[#]*5-->
+            <li>
+                <a href="#">ABOUT</a>
+                <a href="#">STORE</a>
+                <a href="#">COMMUNITY</a>
+                <a href="#">LOCATION</a>
+                <a href="#">NOTICE</a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#side").animate({
+                left:"0"
+            })
+        })
+        $("#side button").click(function(){
+            $("#side").animate({
+                left:"-300px"
+            })
+        })
+    })
+    
+    
+    </script>
+</body>
+</html>

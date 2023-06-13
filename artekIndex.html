@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <link rel="stylesheet" href="indexStyle.css">
+   <script src="jquery-3.6.0.min.js"></script>
+   <style>
+   @media(max-width:1300px) {
+       .object ul li:nth-child(2)  img{
+         display: none;
+      }
+       .object ul li:nth-child(3) img{
+         display: none;
+      }   
+   }
+   @media(max-width:1100px) {
+      .object ul li img{
+         width: 80%; 
+      }
+      .texts{
+         width: 30%;
+         right: 300px;
+      }
+      
+      #page_wrap >div{
+         background-color: #b7b7b7;
+      }
+      .wrap1,.wrap2,.wrap3,.wrap4{
+         background:transparent;
+      }
+      .object ul li:nth-child(2)  img{
+         display: none;
+      }
+      .object ul li:nth-child(3) img{
+         display: none;
+      }
+      .table > div{
+         top: 100px;
+      }
+      .texts{
+         right: 200px;
+         top: -10%;
+      }
+      .text1 ul li:nth-child(1){
+         left: 170px;
+         top: 200px;
+         width: 500px;
+      }
+      .text1 ul li:nth-child(2){
+         left: 170px;
+         top: 330px;
+         width: 500px;
+      }
+      .text2 ul li:nth-child(1){
+         left: 170px;
+         width: 500px;
+      }
+      .text2 ul li:nth-child(2){
+         left: 170px;
+         top: 280px;
+         width: 500px;
+      }
+    }
+      
+        @media(max-width:800px) {
+           .object ul li img{
+              display: none;
+            }
+            .texts{
+               right: 350px;
+            }
+           .text1 ul li:nth-child(1){
+              left: 170px;
+              top: 50px;
+           }
+           .text1 ul li:nth-child(2){
+              left: 170px;
+              top: 250px;
+           }
+          .text2 ul li:nth-child(1){
+            left: 170px;
+            top: -30px;
+            width: 500px;
+         }
+         .text2 ul li:nth-child(2){
+            left: 170px;
+            top: 120px;
+            width: 500px;
+
+         }
+           .text2 ul li:nth-child(3){
+            left: 170px;
+            top: 230px;
+            text-align: left;
+         }
+           .text2 ul li:nth-child(4){
+            left: 170px;
+            top: 340px;
+            text-align: left;
+         }
+         .text3 ul li:nth-child(1){
+            left: 170px;
+            top: 120px;
+            text-align: center;
+         }   
+         .text4 ul li:nth-child(1){
+            left: 170px;
+            top: 0px;
+            width: 500px;
+         }
+         .text4 ul li:nth-child(2){
+            left: 170px;
+            top: 150px;
+            width: 500px;
+
+         }
+           .text4 ul li:nth-child(3){
+            left: 170px;
+            top: 260px;
+            text-align: left;
+         }
+    }
+   
+   
+   
+   </style>
+     
+</head>
+
+<body>
+   <div id="index">
+        <div class="logo">
+             <img src="images/logotype.png" alt="" class="logo">
+        </div>
+        
+        <div class="pager">
+            <button onclick = "fnMove('1')" id="bt1"><span></span></button>
+            <button onclick = "fnMove('2')" id="bt2"><span></span></button>
+            <button onclick = "fnMove('3')" id="bt3"><span></span></button>
+            <button onclick = "fnMove('4')" id="bt4"><span></span></button>
+         </div>
+         
+         <!--         <div class="lineBox"></div>-->
+         
+         
+     
+      
+  <div id="page_wrap">
+   <div class="page wrap1 wh">    
+         
+         <div class="table">   
+            <div class="object">
+               <ul>
+                  <li><img src="images/index/ta_m.png" alt=""></li>
+                  <li><img src="images/index/ta_1.png" alt=""></li>
+                  <li><img src="images/index/ta_2.png" alt=""></li>
+               </ul> 
+            </div>
+            
+            <div class="texts text1">
+               <ul>
+                  <li>
+                  <a href="TableShelves.html">
+                  <button class="Explore">Explore the product</button>
+                  </a>
+                  <h1>TABLES</h1>
+                  <span>Kaari | L-leg | Pirkka</span>
+                  </li>
+                  
+                  <li>
+                  <h1>SHELVING</h1>
+                  <span>Kaari</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>   
+   <div class="page wrap2 wh">
+         
+         
+         <div class="table stool">
+            <div class="object">
+               <ul>
+                  <li><img src="images/index/st_m.png" alt=""></li>
+                  <li><img src="images/index/st_1.png" alt=""></li>
+                  <li><img src="images/index/st_2.png" alt=""></li>
+               </ul> 
+            </div>
+            
+            <div class="texts text2">
+               <ul>
+                  <li>
+                  <a href="StChBeSo.html">
+                  <button class="Explore">Explore the product</button>
+                  </a>
+                  <h1>STOOLS</h1>
+                  <span>L-leg | Atelier | Pirkka</span>
+                  </li>
+                  
+                  <li>
+                  <h1>CHAIRS</h1>
+                  <span>L-leg | Atelier | Pirkka</span>
+                  </li>
+                  
+                  <li>
+                  <h1>BENCHES</h1>
+                  <span>Kiki | Kiulu | Pirkka</span>
+                  </li>
+                  <li>
+                  <h1>CHAIRS</h1>
+                <span>Kiki</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div> 
+   <div class="page wrap3 wh">
+         
+         
+         <div class="table light">   
+            <div class="object">
+               <ul>
+                  <li><img src="images/index/li_m.png" alt=""></li>
+                  <li><img src="images/index/li_1.png" alt=""></li>
+                  <li><img src="images/index/li_2.png" alt=""></li>
+               </ul> 
+            </div>
+            
+            <div class="texts text3">
+               <ul>
+                  <li>
+                  <a href="lightings.html">
+                  <button class="Explore">Explore the product</button>
+                  </a>
+                  <h1>LIGHTING</h1>
+                  <span>Pendant | Floor | Wall and Ceiling</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>   
+   <div class="page wrap4 wh">
+        
+         
+         <div class="table comp">   
+            <div class="object">
+               <ul>
+                  <li><img src="images/index/com_m.png" alt=""></li>
+                  <li><img src="images/index/com_1.png" alt=""></li>
+                  <li><img src="images/index/com_2.png" alt=""></li>
+               </ul> 
+            </div>
+            
+            <div class="texts text4">
+               <ul>
+                  <li>
+                  <a href="CompPatSou.html">
+                  <button class="Explore">Explore the product</button>
+                  </a>
+                  <h1>SOUVENIRS</h1>
+                  <span>Posters | Postcards | Architect's Tools</span>
+                  </li>
+                  
+                  <li>
+                  <h1>PATTERNS</h1>
+                  <span>RIVI | Siena | Zebra</span>
+                  </li>
+                  
+                  <li>
+                  <h1>COMPLEMENTS</h1>
+                  <span>Secrets Of Finland</span>
+                  </li>
+                  
+               </ul>
+            </div>
+         </div>
+      </div>
+  </div>
+   
+   
+   
+   
+   
+   
+   
+   </div>
+   
+     
+     
+      
+
+   
+  <script>
+   
+   $(document).ready(function(){
+      var wh = 
+          $(document).height();
+      var ww =
+          $(document).width();
+      
+      $(".wh").height(wh);
+      $(".ww").height(ww);
+      
+      
+      
+      /*function wrapMove(seq){
+         const offset =$(".wrap"+seq).offset();
+         
+         $("html,body").animate({
+            scrollTop:offset.top,
+            $(".wrap1").fadeIn,
+            $(".wrap2").fadeOut,
+           
+         })
+      }*/
+      
+      
+      
+      $("#bt1").hover(function(){
+         $(".wrap1").fadeIn();
+         $(".wrap2").fadeOut();
+         $(".wrap3").fadeOut();
+         $(".wrap4").fadeOut();
+         
+      })
+      
+      
+        $("#bt2").hover(function(){
+         $(".wrap2").fadeIn();
+         $(".wrap1").fadeOut();
+         $(".wrap3").fadeOut();
+         $(".wrap4").fadeOut();
+         
+      })
+      
+        $("#bt3").hover(function(){
+         $(".wrap3").fadeIn();
+         $(".wrap2").fadeOut();
+         $(".wrap1").fadeOut();
+         $(".wrap4").fadeOut();
+         
+      })
+        $("#bt4").hover(function(){
+         $(".wrap4").fadeIn();
+         $(".wrap2").fadeOut();
+         $(".wrap3").fadeOut();
+         $(".wrap1").fadeOut();
+         
+      })
+      
+      
+      
+     
+   
+      
+
+   })
+   
+   
+   
+   </script> 
+   
+   
+</body>
+</html>
